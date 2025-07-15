@@ -1,1 +1,43 @@
+body {
+  font-family: sans-serif;
+  background: #f0f0f0;
+  padding: 20px;
+}
+h1 {
+  text-align: center;
+}
+.semestre {
+  margin-bottom: 20px;
+}
+.titulo-semestre {
+  background: #333;
+  color: white;
+  padding: 8px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+.ramos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.ramo {
+  background: #ffb6c1; /* rosado */
+  padding: 10px;
+  border-radius: 8px;
+  width: 180px;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.ramo.aprobado {
+  background: #9370db; /* morado */
+  text-decoration: line-through;
+  color: white;
+}
+.ramo.bloqueado {
+  background: #ccc;
+  cursor: not-allowed;
+  pointer-events: none;
+}
 
